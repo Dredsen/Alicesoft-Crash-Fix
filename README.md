@@ -8,8 +8,7 @@ Several Alicesoft games crash on launch unless your Windows clock is in JST. The
 
 The fix is to short-circuit the C runtime's timezone setup so every call to `localtime` inside the game's process behaves as JST. Two patches, 21 bytes total. This tool does it automatically.
 
-A longer write-up of why this happens and how the patch works is at [<https://dredsen.github.io/?p=alicesoft-jst-timezone-fix>](https://dredsen.github.io/post.html?p=alicesoft-jst-timezone-fix).
-
+A longer write-up of why this happens and how the patch works is at [Alicesoft JST Timezone Fix Blog Post](https://dredsen.github.io/post.html?p=alicesoft-jst-timezone-fix).
 ## Requirements
 
 - Python 3.8 or newer
